@@ -4,15 +4,33 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>【新手向】如何在ipfs上从零开始搭建个人博客？ | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="相信很多朋友都想过拥有一个人博客，可以在上面发表一些自己的见解。但是，往往被复杂的代码和高昂的时间精力成本所阻挡。不仅要考虑博客的内容，还得维护博客系统的运营，长久下去初始时的一腔热情也被消耗殆尽。 很多朋友尝试过使用github，把博客直接部署在Github Pages平台。不用写代码，也能让小白拥有自己的个人博客。网上也有非常丰富的相关教程，无论是博客主还是浏览博客的人，都能有不错的交互体验。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【新手向】如何在ipfs上从零开始搭建个人博客？">
+<meta property="og:url" content="http://example.com/2022/07/29/%E3%80%90%E6%96%B0%E6%89%8B%E5%90%91%E3%80%91%E5%A6%82%E4%BD%95%E5%9C%A8ipfs%E4%B8%8A%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%9F/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="相信很多朋友都想过拥有一个人博客，可以在上面发表一些自己的见解。但是，往往被复杂的代码和高昂的时间精力成本所阻挡。不仅要考虑博客的内容，还得维护博客系统的运营，长久下去初始时的一腔热情也被消耗殆尽。 很多朋友尝试过使用github，把博客直接部署在Github Pages平台。不用写代码，也能让小白拥有自己的个人博客。网上也有非常丰富的相关教程，无论是博客主还是浏览博客的人，都能有不错的交互体验。">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b40f070c-eac3-48b7-80d9-baaf369a0eba/Untitled.png">
+<meta property="og:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b3a45b90-11e5-43f5-bf6c-94641dca5076/Untitled.png">
+<meta property="og:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e179e64a-92e8-40fd-ab56-f255078712e3/Untitled.png">
+<meta property="og:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a175e3f8-9db5-40e9-8b03-b961a5f37b50/Untitled.png">
+<meta property="og:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e855c49f-80f6-451e-b62d-7c971f9b33ed/Untitled.png">
+<meta property="og:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d8739ab6-136b-4e89-b8cc-246b94661841/Untitled.png">
+<meta property="og:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c6c14b69-2ea8-4731-a553-0af3fa725a68/Untitled.png">
+<meta property="og:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/506a29a9-19a1-4aa6-b114-9e03d77dcbd0/Untitled.png">
+<meta property="og:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3b1726c4-5db3-4dde-b266-fd68f5182534/Untitled.png">
+<meta property="og:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8a24a4e5-26c2-4085-a6a9-52436d41afb4/Untitled.png">
+<meta property="og:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/233c1767-2f17-4013-a2d3-111a5511b4f7/Untitled.png">
+<meta property="og:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8095ccc5-d56d-4ad0-ba56-1b1ad77b7aaa/Untitled.png">
+<meta property="og:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e85ada8b-b7a0-489a-8700-5740e0b8bd94/Untitled.png">
+<meta property="article:published_time" content="2022-07-29T08:10:52.000Z">
+<meta property="article:modified_time" content="2022-07-29T08:13:02.693Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b40f070c-eac3-48b7-80d9-baaf369a0eba/Untitled.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -69,9 +87,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-【新手向】如何在ipfs上从零开始搭建个人博客？" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-【新手向】如何在ipfs上从零开始搭建个人博客？" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/07/29/%E3%80%90%E6%96%B0%E6%89%8B%E5%90%91%E3%80%91%E5%A6%82%E4%BD%95%E5%9C%A8ipfs%E4%B8%8A%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%9F/" class="article-date">
   <time class="dt-published" datetime="2022-07-29T08:10:52.000Z" itemprop="datePublished">2022-07-29</time>
@@ -84,8 +100,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/29/%E3%80%90%E6%96%B0%E6%89%8B%E5%90%91%E3%80%91%E5%A6%82%E4%BD%95%E5%9C%A8ipfs%E4%B8%8A%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%9F/">【新手向】如何在ipfs上从零开始搭建个人博客？</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      【新手向】如何在ipfs上从零开始搭建个人博客？
     </h1>
   
 
@@ -241,100 +257,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-f3" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/07/29/hello-f3/" class="article-date">
-  <time class="dt-published" datetime="2022-07-29T06:00:15.000Z" itemprop="datePublished">2022-07-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/29/hello-f3/">hello f3</a>
-    </h1>
+    <a href="/2022/07/29/hello-f3/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">hello f3</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/29/hello-f3/" data-id="cl666tici00002ri00em87ehj" data-title="hello f3" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/07/29/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-07-29T05:57:32.730Z" itemprop="datePublished">2022-07-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/07/29/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/29/hello-world/" data-id="cl666ticl00012ri09a4wgsp8" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
